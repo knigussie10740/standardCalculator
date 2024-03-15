@@ -1,0 +1,133 @@
+/*UNVERSAL SELECTOR*/
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*ELEMENT SELECTOR*/
+body {
+    background-color:  #a85e59;
+    padding: 2px;
+    margin: 0px;
+    text-align: center;
+}
+body:hover{
+    background-color: rgb(232, 232, 244);
+
+}
+
+button {
+    font-size: 40px;
+    margin: 0 auto;
+    padding-left: 1px;
+    padding-right: 10px;
+    width: 90px;
+
+}
+
+button:hover {
+    background-color: rgb(54, 195, 246);
+
+}
+
+
+h1 {
+    color: rgb(56, 1, 1);
+    font-weight: bold;
+    font-size:60px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1:active {
+    color: #f0e50e;
+    font-size: 65px;
+}
+
+section{
+    border: 2px;
+    padding-top: 10px;
+    
+}
+
+
+/*ID SELECTOR*/
+
+#cal-culater:hover {
+    background-color: aqua;
+    color: rgb(199, 150, 245);
+}
+
+#number:hover {
+    background-color: aqua;
+}
+
+#form {
+    font-size: large;
+
+
+}
+
+#equal {
+    background-color: rgb(238, 148, 229);
+    font-size: 40px;
+}
+
+
+#clear {
+    background-color: rgb(13, 144, 244);
+    border: 2px solid;
+}
+
+/*CLASS SELECTOR*/
+
+.operater1 {
+    background-color: rgb(233, 16, 16);
+    
+}
+
+.operater2 {
+    background-color: rgb(69, 218, 203);
+
+}
+
+.operater3 {
+    background-color: aquamarine;
+}
+
+.operater4{
+    background-color: #f0e50e;
+}
+.operater5{
+    background-color: rgb(204, 13, 118);
+}
+
+.operater6 {
+    background-color: #e38425;
+}
+
+
+/*GROUP SELECTOR*/
+
+#cal-culater,
+#number {
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(45, 45, 87);
+}
+
+/*CHILD SELECTER*/
+#row1>#clear {
+    background-color: rgb(236, 10, 10);
+}
+
+/*DECENDANT SELECTER*/
+
+#row2 .operater {
+    font-size: 40px;
+
+}
+
+/*GENERAL SIBLING SELECTOR*/
+#row5~.operater {
+    background-color: bisque;
+}
