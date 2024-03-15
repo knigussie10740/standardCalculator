@@ -21,6 +21,7 @@ button {
     padding-left: 1px;
     padding-right: 10px;
     width: 90px;
+    font-weight: bold;
 
 }
 
@@ -76,6 +77,8 @@ section{
 #clear {
     background-color: rgb(13, 144, 244);
     border: 2px solid;
+
+    
 }
 
 /*CLASS SELECTOR*/
@@ -87,6 +90,8 @@ section{
 
 .operater2 {
     background-color: rgb(69, 218, 203);
+    font-weight:bold;
+    
 
 }
 
