@@ -1,6 +1,7 @@
 /*UNVERSAL SELECTOR*/
 * {
     font-family: 'Courier New', Courier, monospace;
+display:contents center;
 }
 
 /*ELEMENT SELECTOR*/
@@ -8,51 +9,35 @@ body {
     background-color:  #a85e59;
     padding: 2px;
     margin: 0px;
-    text-align: center;
+    display: center;
 }
-body:hover{
-    background-color: rgb(232, 232, 244);
-
+main{
+    border: 5px solid black;
+    width: 395px;
+    background-color: rgb(41, 41, 43);
 }
 
 button {
     font-size: 40px;
-    margin: 0 auto;
     padding-left: 1px;
     padding-right: 10px;
     width: 90px;
     font-weight: bold;
-
 }
-
-button:hover {
-    background-color: rgb(54, 195, 246);
-
-}
-
 
 h1 {
     color: rgb(56, 1, 1);
     font-weight: bold;
-    font-size:60px;
+    font-size:50px;
     font-family: 'Times New Roman', Times, serif;
-
-}
-
-h1:active {
-    color: #f0e50e;
-    font-size: 65px;
 }
 
 section{
     border: 2px;
-    padding-top: 10px;
-    
+    padding-top: 10px;    
 }
 
-
 /*ID SELECTOR*/
-
 #cal-culater:hover {
     background-color: aqua;
     color: rgb(199, 150, 245);
@@ -64,8 +49,6 @@ section{
 
 #form {
     font-size: large;
-
-
 }
 
 #equal {
@@ -73,26 +56,20 @@ section{
     font-size: 40px;
 }
 
-
 #clear {
     background-color: rgb(13, 144, 244);
-    border: 2px solid;
-
-    
+    border: 2px solid;   
 }
 
 /*CLASS SELECTOR*/
 
 .operater1 {
-    background-color: rgb(233, 16, 16);
-    
+    background-color: rgb(233, 16, 16);   
 }
 
 .operater2 {
     background-color: rgb(69, 218, 203);
     font-weight:bold;
-    
-
 }
 
 .operater3 {
@@ -110,29 +87,65 @@ section{
     background-color: #e38425;
 }
 
-
 /*GROUP SELECTOR*/
-
-#cal-culater,
-#number {
+#cal-culater, #number {
     font-weight: bold;
     font-size: 50px;
     color: rgb(45, 45, 87);
+    padding-right:50px;
+    background-color: #ebf6f6;
+}
+/*ATTRIBUTE SELECTER*/
+button[value="5"]{
+background-color: #a85e59;
+color: white;
+}
+
+button[value="√"]{
+    background-color: rgb(182, 52, 5);
+}
+
+button[value="4"]{
+    background-color: rgb(15, 201, 37);
+}
+button[value="3"]{
+    background-color: rgb(2, 88, 102);
+    color: rgb(188, 9, 9);
+    font-weight: bold;
 }
 
 /*CHILD SELECTER*/
-#row1>#clear {
-    background-color: rgb(236, 10, 10);
+#row1 > #clear{
+    background-color: red;
 }
 
 /*DECENDANT SELECTER*/
-
 #row2 .operater {
     font-size: 40px;
-
 }
 
 /*GENERAL SIBLING SELECTOR*/
-#row5~.operater {
+#row5 ~ .operater {
     background-color: bisque;
 }
+/* PSEUDO CLASS SELECTOR*/
+h1:active {
+    color: #f0e50e;
+    font-size: 65px;
+}
+
+button:hover {
+    background-color: rgb(54, 195, 246);
+}
+body:hover{
+    background-color: rgb(232, 232, 244);
+}
+
+#row1 > #clear:hover{
+    background-color:rgb(144, 185, 236)   
+}
+/* PSEUDO ELEMENT SELECTOR*/
+h1::first-letter{
+    font-size: 70px;
+}
+
